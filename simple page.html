@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title id="meta-title">BrightBuild — Home Construction & Renovation</title>
+    <meta id="meta-desc" name="description" content="BrightBuild — colorful, modern home construction, renovation, and design services." />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-transparent py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-3 brand">
+                <div class="logo rounded-circle d-flex align-items-center justify-content-center" > <img img src="C:\Users\farhad\Desktop\New folder (3)\log.png" alt="" height="100%" width="100%"  ></div>
+                <div class="brand-text">
+                    <h1 id="brand-name" class="h5 mb-0">BrightBuild</h1>
+                    <div class="muted small" id="brand-tag">Home Construction & Renovation</div>
+                </div>
+            </div>
+
+            <nav class="d-none d-md-flex align-items-center gap-3">
+                <a class="nav-link px-2" href="#services" id="nav-services">Services</a>
+                <a class="nav-link px-2" href="#gallery" id="nav-gallery">Gallery</a>
+                <a class="nav-link px-2" href="#contact" id="about-us-heading">Contact us</a>
+                <a class="btn btn-primary ms-2" href="#contact" id="nav-contact">Get a Quote</a>
+            </nav>
+
+            <div class="controls d-flex gap-2 align-items-center">
+                <div class="control-group d-flex gap-1 align-items-center">
+                    <label for="themeToggle" class="control-label small mb-0" id="label-theme">Theme</label>
+                    <select id="themeToggle" class="form-select form-select-sm" aria-label="Theme">
+                        <option value="auto">Auto</option>
+                        <option value="day">Day</option>
+                        <option value="night">Night</option>
+                    </select>
+                </div>
+                <div class="control-group d-flex gap-1 align-items-center">
+                    <label for="lang" class="control-label small mb-0" id="label-lang">Language</label>
+                    <select id="lang" class="form-select form-select-sm" aria-label="Language">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                        <option value="fa">فارسی</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <main>
+            <div class="row g-4 align-items-start hero">
+                <div class="col-lg-8">
+                    <div class="card hero-card p-4 shadow-sm fade-in" id="intro">
+                        <h2 id="hero-title" class="h3">Build Beautiful. Build Bright.</h2>
+                        <p id="hero-desc" class="muted mb-3">From full-home construction to modern renovations, we combine thoughtful design, trusted craftsmanship and sustainable materials to create spaces you'll love for a lifetime.</p>
+
+                        <div class="d-flex gap-2 mb-3 cta-row">
+                            <button type="button" class="btn btn-primary" id="btn-request"><i class="bi bi-envelope-fill me-1"></i><span id="btn-request-label">Request Quote</span></button>
+                            <button type="button" class="btn btn-outline-secondary" id="btn-view"><i class="bi bi-images me-1"></i><span id="btn-view-label">View Projects</span></button>
+                        </div>
+
+                        <div class="highlights d-flex gap-2 flex-wrap" aria-hidden="true">
+                            <span class="badge bg-light text-dark" id="chip-1">10+ Years Experience</span>
+                            <span class="badge bg-light text-dark" id="chip-2">Licensed & Insured</span>
+                            <span class="badge bg-light text-dark" id="chip-3">Sustainable Materials</span>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="card side p-3 shadow-sm fade-in" id="quick">
+                        <div class="project-meta">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div>
+                                    <div class="small" id="typical-label">Typical New Build</div>
+                                    <div class="price h5 mb-0" id="typical-price">$220k+</div>
+                                </div>
+                                <div class="text-end">
+                                    <div class="small" id="avg-label">Avg. Timeline</div>
+                                    <div class="price-strong h6 mb-0" id="avg-value">6-9 months</div>
+                                </div>
+                            </div>
+
+                            <div class="small muted mb-3" id="free-consult">Free consultation & site visit. We provide transparent budgets, timelines and design guidance.</div>
+
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-primary flex-fill" id="btn-schedule">Schedule Visit</button>
+                                <button type="button" class="btn btn-outline-secondary flex-fill" id="btn-contact">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+   
+
+            <section id="services" class="services my-5">
+                <h2 id="services-heading" class="h4 mb-3">Our Services</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 services-grid">
+                    <div class="col">
+                        <div class="card h-100 p-3 fade-in">
+                            <img class="img-fluid rounded mb-2" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\p1 " alt="New home exterior" loading="lazy">
+                            <h3 id="svc-new" class="h6">New Home Construction</h3>
+                            <p id="svc-new-desc" class="muted small">Full project management from foundation to finish — custom homes tailored to your lifestyle and site.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-3 fade-in">
+                            <img class="img-fluid rounded mb-2" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\p2" alt="Renovated living room" loading="lazy">
+                            <h3 id="svc-reno" class="h6">Home Renovation</h3>
+                            <p id="svc-reno-desc" class="muted small">Kitchen, bathroom and whole-home renovations focused on durability, function and timeless style.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-3 fade-in">
+                            <img class="img-fluid rounded mb-2" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9d4f8f0b2b6c2e6a3f9e9b1a1b2c3d4e" alt="Architectural sketch and model" loading="lazy">
+                            <h3 id="svc-design" class="h6">Design & Architecture</h3>
+                            <p id="svc-design-desc" class="muted small">Collaborative design process with realistic budgets and 3D visuals so you know exactly what you'll get.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-3 fade-in">
+                            <img class="img-fluid rounded mb-2" src="https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a7b6f4d3c8e1f0a9b6c5d4e3f2a1b0c" alt="Outdoor patio and landscaping" loading="lazy">
+                            <h3 id="svc-outdoor" class="h6">Outdoor & Landscaping</h3>
+                            <p id="svc-outdoor-desc" class="muted small">Patios, decks and hardscapes designed for low maintenance and outdoor living.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         <section id="gallery" class="gallery-section my-5">
+                <h2 id="gallery-heading" class="h4 mb-3">Recent Projects</h2>
+                <div id="gallerySlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-3 gallery">
+                                <div class="col-12 col-md-4">
+                                    <img class="img-fluid rounded shadow-sm" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\p4.jpeg" alt="Modern home exterior" onclick="openLightbox(this.src,this.alt)">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <img class="img-fluid rounded shadow-sm" src=" C:\Users\farhad\Desktop\New folder (3)\project_pic\p2.jpeg" alt="Cozy living room" onclick="openLightbox(this.src,this.alt)">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <img class="img-fluid rounded shadow-sm" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\p3.jpeg" alt="Kitchen remodel" onclick="openLightbox(this.src,this.alt)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row g-3 gallery">
+                                <div class="col-12 col-md-4">
+                                    <img class="img-fluid rounded shadow-sm" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\p1.jpeg" alt="Outdoor patio and landscaping" onclick="openLightbox(this.src,this.alt)">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <img class="img-fluid rounded shadow-sm" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\fuzail.jpeg " alt="Architectural sketch" onclick="openLightbox(this.src,this.alt)">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <img class="img-fluid rounded shadow-sm" src="C:\Users\farhad\Desktop\New folder (3)\project_pic\p5.jpeg" alt="Outdoor patio and landscaping" onclick="openLightbox(this.src,this.alt)">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#gallerySlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#gallerySlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <div class="row two-col g-4">
+                <div class="col-lg-8">
+                    <div class="card p-4 fade-in">
+                        <h2 id="about-heading" class="h5">About BrightBuild</h2>
+                        <p class="muted" id="about-desc">We are a small team of architects, project managers and craftsmen dedicated to building homes that blend beauty, function and sustainability. Every project is managed with transparent communication and a focus on long-term value.</p>
+
+                        <div class="why-choose">
+                            <h3 id="why-heading" class="h6">Why clients choose us</h3>
+                            <ul id="why-list" class="muted">
+                                <li>Clear budgeting & realistic timelines</li>
+                                <li>Eco-friendly product options</li>
+                                <li>Skilled local trades and quality control</li>
+                            </ul>
+                        </div>
+
+                   
+                        <div class="testi d-flex gap-3 align-items-start">
+                            <div  ></div>
+                            <div>
+                      </div>
+                        </div> 
+                        <div class="testi d-flex gap-3 align-items-start mt-2">
+                            <div > </div>
+                            <div>
+                       </div>
+                        </div>
+                    </div>
+                    <br>
+ 
+                        <section class="col-12">
+        <div class="card p-4">
+            <h2 id="about-us-heading" class="h5">Contact Us</h2>
+        
+  <p>📞 <strong>Phone:</strong> +1 234 567 890</p>
+  <p>📱 <strong>WhatsApp:</strong> +1 234 567 890</p>
+  <p>✉️ <strong>Email:</strong> info@yourwebsite.com</p>
+  <p>🌐 <strong>Website:</strong> <a href="https://www.yourwebsite.com" target="_blank">www.yourwebsite.com</a></p>
+  <p>📍 <strong>Address:</strong> 123 Main Street, New York, NY, USA</p>
+  <p>🗺️ <strong>View on Map:</strong> <a href="https://maps.google.com" target="_blank">Open Google Maps</a></p>
+            <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-between gap-3 mt-3">
+             
+
+                <div class="social d-flex gap-2 align-items-center">
+                    <span class="small muted me-2 d-none d-sm-inline">Follow us</span>
+                    <a id="social-fb" class="btn btn-outline-secondary btn-sm" href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a id="social-insta" class="btn btn-outline-secondary btn-sm" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a id="social-pin" class="btn btn-outline-secondary btn-sm" href="#" target="_blank" rel="noopener" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    <a id="social-link" class="btn btn-outline-secondary btn-sm" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a id="social-tw" class="btn btn-outline-secondary btn-sm" href="#" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="card p-3 fade-in" id="contact">
+                        <h2 id="contact-heading" class="h6">Request a Quote</h2>
+                        <p class="muted small" id="contact-desc">Tell us about your project and we'll reply within 48 hours.</p>
+                        <form id="contact-form">
+                            <div class="mb-2">
+                                <input type="text" id="name" class="form-control" placeholder="Full name" required />
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required />
+                            </div>
+                            <div class="mb-2">
+                                <input type="text" id="phone" class="form-control" placeholder="Phone (optional)" />
+                            </div>
+                            <div class="mb-2">
+                                <select id="service" class="form-select" aria-label="Service">
+                                    <option value="new">New Home Construction</option>
+                                    <option value="reno">Home Renovation</option>
+                                    <option value="design">Design & Architecture</option>
+                                    <option value="outdoor">Outdoor / Landscaping</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <textarea id="message" class="form-control" rows="4" placeholder="Project details & location"></textarea>
+                            </div>
+                            <div class="d-flex gap-2 mb-2">
+                                <button class="btn btn-primary flex-fill" type="submit" id="btn-send">Send Request</button>
+                                <button class="btn btn-outline-secondary flex-fill" type="button" id="btn-reset">Reset</button>
+                            </div>
+                            <div class="muted small" id="privacy-note">We respect your privacy. By sending a message you agree to our terms.</div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+<div class="row g-4 my-4">
+
+</div>
+            <footer class="mt-5 text-center muted small">
+                © <span id="yr"></span> <span id="footer-name">BrightBuild</span> — <span id="built-with">Built with care</span> • <span class="muted" id="footer-contact">contact@brightbuild.example</span>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Lightbox (simple overlay) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox-inner">
+            <button type="button" class="lightbox-close btn btn-sm btn-light" onclick="closeLightbox()" aria-label="Close">✕</button>
+            <img id="lb-img" src="" alt="" class="img-fluid rounded" />
+            <div id="lb-caption" class="muted mt-2"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Existing app script (unchanged logic) -->
+    <script>
+        // --- Theme (day/night/auto) ---
+        const themeSelect = document.getElementById('themeToggle');
+        const savedTheme = localStorage.getItem('bb_theme') || 'auto';
+        themeSelect.value = savedTheme;
+        function applyTheme(choice){
+            document.documentElement.classList.remove('theme-day','theme-night');
+            if(choice === 'auto'){
+                const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.classList.add(dark ? 'theme-night' : 'theme-day');
+            } else {
+                document.documentElement.classList.add(choice === 'night' ? 'theme-night' : 'theme-day');
+            }
+        }
+        applyTheme(savedTheme);
+        themeSelect.addEventListener('change', e=>{
+            localStorage.setItem('bb_theme', e.target.value);
+            applyTheme(e.target.value);
+        });
+
+        // --- Localization ---
+        const translations = {
+            en: {
+                title: "BrightBuild — Home Construction & Renovation",
+                desc: "BrightBuild — colorful, modern home construction, renovation, and design services.",
+                brandTag: "Home Construction & Renovation",
+                navServices: "Services", navGallery: "Gallery", navContact: "Get a Quote",
+                heroTitle: "Build Beautiful. Build Bright.",
+                heroDesc: "From full-home construction to modern renovations, we combine thoughtful design, trusted craftsmanship and sustainable materials to create spaces you'll love for a lifetime.",
+                btnRequest: "Request Quote", btnView: "View Projects",
+                chip1: "10+ Years Experience", chip2: "Licensed & Insured", chip3: "Sustainable Materials",
+                typicalLabel: "Typical New Build", typicalPrice: "$220k+", avgLabel: "Avg. Timeline", avgValue: "6-9 months",
+                freeConsult: "Free consultation & site visit. We provide transparent budgets, timelines and design guidance.",
+                btnSchedule: "Schedule Visit", btnContact: "Contact",
+                servicesHeading: "Our Services",
+                svcNew: "New Home Construction", svcNewDesc: "Full project management from foundation to finish — custom homes tailored to your lifestyle and site.",
+                svcReno: "Home Renovation", svcRenoDesc: "Kitchen, bathroom and whole-home renovations focused on durability, function and timeless style.",
+                svcDesign: "Design & Architecture", svcDesignDesc: "Collaborative design process with realistic budgets and 3D visuals so you know exactly what you'll get.",
+                svcOutdoor: "Outdoor & Landscaping", svcOutdoorDesc: "Patios, decks and hardscapes designed for low maintenance and outdoor living.",
+                galleryHeading: "Recent Projects",
+                aboutHeading: "About BrightBuild",
+                aboutDesc: "We are a small team of architects, project managers and craftsmen dedicated to building homes that blend beauty, function and sustainability. Every project is managed with transparent communication and a focus on long-term value.",
+                whyHeading: "Why clients choose us",
+                why1: "Clear budgeting & realistic timelines", why2: "Eco-friendly product options", why3: "Skilled local trades and quality control",
+         
+                contactHeading: "Request a Quote", contactDesc: "Tell us about your project and we'll reply within 48 hours.",
+                placeholders: { name: "Full name", email: "Email", phone: "Phone (optional)", message: "Project details & location" },
+                btnSend: "Send Request", btnReset: "Reset",
+                privacy: "We respect your privacy. By sending a message you agree to our terms.",
+                footerBuilt: "Built with care", footerContact: "contact@brightbuild.example"
+            },
+            fr: {
+                title: "BrightBuild — Construction et Rénovation",
+                desc: "BrightBuild — services modernes de construction, rénovation et design.",
+                brandTag: "Construction et Rénovation",
+                navServices: "Services", navGallery: "Galerie", navContact: "Demander un devis",
+                heroTitle: "Construisez beau. Construisez Bright.",
+                heroDesc: "De la construction complète à la rénovation moderne, nous allions design réfléchi, savoir-faire fiable et matériaux durables pour créer des espaces que vous aimerez toute votre vie.",
+                btnRequest: "Demander un devis", btnView: "Voir les projets",
+                chip1: "10+ ans d'expérience", chip2: "Assuré & Licencié", chip3: "Matériaux durables",
+                typicalLabel: "Construction typique", typicalPrice: "À partir de 220k$", avgLabel: "Durée moyenne", avgValue: "6-9 mois",
+                freeConsult: "Consultation et visite de site gratuites. Budgets et délais transparents.",
+                btnSchedule: "Planifier une visite", btnContact: "Contact",
+                servicesHeading: "Nos Services",
+                svcNew: "Construction de maisons neuves", svcNewDesc: "Gestion complète du projet de la fondation à la finition — maisons sur mesure.",
+                svcReno: "Rénovation", svcRenoDesc: "Rénovations de cuisine, salle de bain et maison entière axées sur la durabilité et le style.",
+                svcDesign: "Design & Architecture", svcDesignDesc: "Processus collaboratif avec budgets réalistes et visuels 3D.",
+                svcOutdoor: "Extérieur & Paysage", svcOutdoorDesc: "Patios, terrasses et éléments paysagers à faible entretien.",
+                galleryHeading: "Projets récents",
+                aboutHeading: "À propos de BrightBuild",
+                aboutDesc: "Nous sommes une petite équipe d'architectes, chefs de projet et artisans dédiés à construire des maisons qui allient beauté, fonctionnalité et durabilité.",
+                whyHeading: "Pourquoi nous choisir",
+                why1: "Budgétisation claire & délais réalistes", why2: "Options écologiques", why3: "Artisans locaux qualifiés",
+ 
+                contactHeading: "Demandez un devis", contactDesc: "Parlez-nous de votre projet et nous répondrons sous 48 heures.",
+                placeholders: { name: "Nom complet", email: "E-mail", phone: "Téléphone (optionnel)", message: "Détails du projet & emplacement" },
+                btnSend: "Envoyer", btnReset: "Réinitialiser",
+                privacy: "Nous respectons votre vie privée. En envoyant un message, vous acceptez nos conditions.",
+                footerBuilt: "Construit avec soin", footerContact: "contact@brightbuild.example"
+            },
+            ar: {
+                title: "برايت بيلد — البناء والتجديد",
+                desc: "برايت بيلد — خدمات البناء والتجديد والتصميم الحديثة.",
+                brandTag: "البناء والتجديد",
+                navServices: "الخدمات", navGallery: "المعرض", navContact: "اطلب عرض سعر",
+                heroTitle: "ابنِ جميلاً. ابنِ براقاً.",
+                heroDesc: "من البناء الكامل إلى التجديدات الحديثة، نجمع التصميم المدروس والحرفية الموثوقة والمواد المستدامة لخلق مساحات ستحبها مدى الحياة.",
+                btnRequest: "اطلب عرض", btnView: "عرض المشاريع",
+                chip1: "أكثر من 10 سنوات خبرة", chip2: "مرخّص ومؤمن", chip3: "مواد مستدامة",
+                typicalLabel: "بناء نموذجي جديد", typicalPrice: "$220k+", avgLabel: "المدة المتوسطة", avgValue: "6-9 أشهر",
+                freeConsult: "استشارة وزيارة موقعة مجانية. ميزانيات وزمن تنفيذ شفاف.",
+                btnSchedule: "حدد زيارة", btnContact: "تواصل",
+                servicesHeading: "خدماتنا",
+                svcNew: "بناء منازل جديدة", svcNewDesc: "إدارة المشروع بالكامل من الأساس حتى التشطيب — منازل مخصصة.",
+                svcReno: "تجديد المنازل", svcRenoDesc: "تجديد المطابخ والحمامات والمنازل بأكملها مع التركيز على المتانة.",
+                svcDesign: "التصميم والمعمار", svcDesignDesc: "عملية تصميم تعاونية مع ميزانيات واقعية ومرئيات ثلاثية الأبعاد.",
+                svcOutdoor: "الحدائق والمناطق الخارجية", svcOutdoorDesc: "تصميم فناء، أسطح ومساحات خارجية منخفضة الصيانة.",
+                galleryHeading: "مشاريع حديثة",
+                aboutHeading: "عن برايت بيلد",
+                aboutDesc: "نحن فريق صغير من المعماريين ومديري المشاريع والحرفيين مكرس لبناء منازل تجمع بين الجمال والوظيفة والاستدامة.",
+                whyHeading: "لماذا يختارنا العملاء",
+                why1: "ميزانيات واضحة وجداول زمنية واقعية", why2: "خيارات صديقة للبيئة", why3: "حرفيون محليون مهرة",
+                
+                contactHeading: "اطلب عرض سعر", contactDesc: "أخبرنا عن مشروعك وسنرد في غضون 48 ساعة.",
+                placeholders: { name: "الاسم الكامل", email: "البريد الإلكتروني", phone: "الهاتف (اختياري)", message: "تفاصيل المشروع والموقع" },
+                btnSend: "إرسال", btnReset: "إعادة تعيين",
+                privacy: "نحترم خصوصيتك. بإرسال رسالة أنت توافق على الشروط.",
+                footerBuilt: "مصنوع بعناية", footerContact: "contact@brightbuild.example"
+            },
+            fa: {
+                title: "برایْت بیلد — ساخت و بازسازی",
+                desc: "برایْت بیلد — خدمات مدرن ساخت، بازسازی و طراحی.",
+                brandTag: "ساخت و بازسازی",
+                navServices: "خدمات", navGallery: "نمونه کار", navContact: "درخواست قیمت",
+                heroTitle: "زیبایی بسازید. روشن بسازید.",
+                heroDesc: "از ساخت کامل تا بازسازی‌های مدرن، ما طراحی سنجیده، مهارت قابل اعتماد و مواد پایدار را ترکیب می‌کنیم تا فضاهایی بسازیم که تا سال‌ها دوست خواهید داشت.",
+                btnRequest: "درخواست قیمت", btnView: "مشاهده پروژه‌ها",
+                chip1: "بیش از 10 سال تجربه", chip2: "مجوز و بیمه", chip3: "مواد پایدار",
+                typicalLabel: "ساخت معمولی جدید", typicalPrice: "۲۲۰k$+", avgLabel: "زمان متوسط", avgValue: "۶-۹ ماه",
+                freeConsult: "مشاوره و بازدید رایگان. بودجه و زمان‌بندی شفاف ارائه می‌دهیم.",
+                btnSchedule: "زمان‌بندی بازدید", btnContact: "تماس",
+                servicesHeading: "خدمات ما",
+                svcNew: "ساخت خانه جدید", svcNewDesc: "مدیریت کامل پروژه از سازه تا نهایی — خانه‌های سفارشی.",
+                svcReno: "بازسازی خانه", svcRenoDesc: "بازسازی آشپزخانه، حمام و کل خانه با تمرکز بر دوام و عملکرد.",
+                svcDesign: "طراحی و معماری", svcDesignDesc: "فرآیند طراحی تعاملی با بودجه‌های واقعی و نماهای سه‌بعدی.",
+                svcOutdoor: "فضای باز و محوطه‌سازی", svcOutdoorDesc: "پروژه‌های کم‌نگهداری برای زندگی در فضای باز.",
+                galleryHeading: "پروژه‌های اخیر",
+                aboutHeading: "درباره برایت بیلد",
+                aboutDesc: "ما تیم کوچکی از معماران، مدیران پروژه و صنعتگران هستیم که به ساخت خانه‌هایی می‌پردازیم که زیبایی، کاربرد و پایداری را ترکیب می‌کنند.",
+                whyHeading: "چرا مشتریان ما را انتخاب می‌کنند",
+                why1: "بودجه‌بندی شفاف و زمان‌بندی واقع‌بینانه", why2: "گزینه‌های دوستدار محیط‌زیست", why3: "صنعتگران محلی ماهر",
+         
+                contactHeading: "درخواست قیمت", contactDesc: "درباره پروژه‌تان بگویید؛ ظرف ۴۸ ساعت پاسخ می‌دهیم.",
+                placeholders: { name: "نام کامل", email: "ایمیل", phone: "تلفن (اختیاری)", message: "جزئیات پروژه و محل" },
+                btnSend: "ارسال", btnReset: "بازنشانی",
+                privacy: "ما به حریم خصوصی شما احترام می‌گذاریم. با ارسال پیام، شما با شرایط ما موافقت می‌کنید.",
+                footerBuilt: "ساخته شده با دقت", footerContact: "contact@brightbuild.example"
+            }
+        };
+
+        const elements = {
+            title: document.getElementById('meta-title'),
+            desc: document.getElementById('meta-desc'),
+            brandTag: document.getElementById('brand-tag'),
+            navServices: document.getElementById('nav-services'),
+            navGallery: document.getElementById('nav-gallery'),
+            navContact: document.getElementById('nav-contact'),
+            heroTitle: document.getElementById('hero-title'),
+            heroDesc: document.getElementById('hero-desc'),
+            btnRequest: document.getElementById('btn-request'),
+            btnView: document.getElementById('btn-view'),
+            chip1: document.getElementById('chip-1'),
+            chip2: document.getElementById('chip-2'),
+            chip3: document.getElementById('chip-3'),
+            typicalLabel: document.getElementById('typical-label'),
+            typicalPrice: document.getElementById('typical-price'),
+            avgLabel: document.getElementById('avg-label'),
+            avgValue: document.getElementById('avg-value'),
+            freeConsult: document.getElementById('free-consult'),
+            btnSchedule: document.getElementById('btn-schedule'),
+            btnContact: document.getElementById('btn-contact'),
+            servicesHeading: document.getElementById('services-heading'),
+            svcNew: document.getElementById('svc-new'),
+            svcNewDesc: document.getElementById('svc-new-desc'),
+            svcReno: document.getElementById('svc-reno'),
+            svcRenoDesc: document.getElementById('svc-reno-desc'),
+            svcDesign: document.getElementById('svc-design'),
+            svcDesignDesc: document.getElementById('svc-design-desc'),
+            svcOutdoor: document.getElementById('svc-outdoor'),
+            svcOutdoorDesc: document.getElementById('svc-outdoor-desc'),
+            galleryHeading: document.getElementById('gallery-heading'),
+            aboutHeading: document.getElementById('about-heading'),
+            aboutDesc: document.getElementById('about-desc'),
+            whyHeading: document.getElementById('why-heading'),
+            whyList: document.getElementById('why-list'),
+      
+            contactHeading: document.getElementById('contact-heading'),
+            contactDesc: document.getElementById('contact-desc'),
+            placeholders: {
+                name: document.getElementById('name'),
+                email: document.getElementById('email'),
+                phone: document.getElementById('phone'),
+                message: document.getElementById('message')
+            },
+            btnSend: document.getElementById('btn-send'),
+            btnReset: document.getElementById('btn-reset'),
+            privacy: document.getElementById('privacy-note'),
+            footerBuilt: document.getElementById('built-with'),
+            footerContact: document.getElementById('footer-contact'),
+            brandName: document.getElementById('brand-name'),
+            metaTitleEl: document.getElementById('meta-title'),
+            btnRequestLabel: document.getElementById('btn-request-label'),
+            btnViewLabel: document.getElementById('btn-view-label')
+        };
+
+        function applyLocale(locale){
+            const t = translations[locale] || translations.en;
+            document.documentElement.lang = locale;
+            // rtl handling
+            if(locale === 'ar' || locale === 'fa'){
+                document.documentElement.dir = 'rtl';
+                document.documentElement.classList.add('rtl');
+            } else {
+                document.documentElement.dir = 'ltr';
+                document.documentElement.classList.remove('rtl');
+            }
+            document.title = t.title;
+            elements.title.textContent = t.title;
+            elements.desc.setAttribute('content', t.desc);
+            elements.brandTag.textContent = t.brandTag;
+            elements.navServices.textContent = t.navServices;
+            elements.navGallery.textContent = t.navGallery;
+            elements.navContact.textContent = t.navContact;
+            elements.heroTitle.textContent = t.heroTitle;
+            elements.heroDesc.textContent = t.heroDesc;
+            elements.btnRequestLabel.textContent = t.btnRequest;
+            elements.btnViewLabel.textContent = t.btnView;
+            elements.chip1.textContent = t.chip1;
+            elements.chip2.textContent = t.chip2;
+            elements.chip3.textContent = t.chip3;
+            elements.typicalLabel.textContent = t.typicalLabel;
+            elements.typicalPrice.textContent = t.typicalPrice;
+            elements.avgLabel.textContent = t.avgLabel;
+            elements.avgValue.textContent = t.avgValue;
+            elements.freeConsult.textContent = t.freeConsult;
+            elements.btnSchedule.textContent = t.btnSchedule;
+            elements.btnContact.textContent = t.btnContact;
+            elements.servicesHeading.textContent = t.servicesHeading;
+            elements.svcNew.textContent = t.svcNew;
+            elements.svcNewDesc.textContent = t.svcNewDesc;
+            elements.svcReno.textContent = t.svcReno;
+            elements.svcRenoDesc.textContent = t.svcRenoDesc;
+            elements.svcDesign.textContent = t.svcDesign;
+            elements.svcDesignDesc.textContent = t.svcDesignDesc;
+            elements.svcOutdoor.textContent = t.svcOutdoor;
+            elements.svcOutdoorDesc.textContent = t.svcOutdoorDesc;
+            elements.galleryHeading.textContent = t.galleryHeading;
+            elements.aboutHeading.textContent = t.aboutHeading;
+            elements.aboutDesc.textContent = t.aboutDesc;
+            elements.whyHeading.textContent = t.whyHeading;
+            // rebuild why list
+            elements.whyList.innerHTML = `<li>${t.why1}</li><li>${t.why2}</li><li>${t.why3}</li>`;
+ 
+            elements.contactHeading.textContent = t.contactHeading;
+            elements.contactDesc.textContent = t.contactDesc;
+            elements.placeholders.name.placeholder = t.placeholders.name;
+            elements.placeholders.email.placeholder = t.placeholders.email;
+            elements.placeholders.phone.placeholder = t.placeholders.phone;
+            elements.placeholders.message.placeholder = t.placeholders.message;
+            elements.btnSend.textContent = t.btnSend;
+            elements.btnReset.textContent = t.btnReset;
+            elements.privacy.textContent = t.privacy;
+            elements.footerBuilt.textContent = t.footerBuilt;
+            elements.footerContact.textContent = t.footerContact;
+        }
+
+        const langSelect = document.getElementById('lang');
+        const savedLang = localStorage.getItem('bb_lang') || (navigator.language || 'en').slice(0,2);
+        if(['en','fr','ar','fa'].includes(savedLang)) langSelect.value = savedLang;
+        else langSelect.value = 'en';
+        applyLocale(langSelect.value);
+        langSelect.addEventListener('change', e=>{
+            localStorage.setItem('bb_lang', e.target.value);
+            applyLocale(e.target.value);
+        });
+
+        // --- Basic interactions ---
+        document.getElementById('yr').textContent = new Date().getFullYear();
+
+        // reveal on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const obs = new IntersectionObserver(entries=>{
+            entries.forEach(e=>{
+                if(e.isIntersecting) e.target.classList.add('show');
+            });
+        }, {threshold:0.12});
+        faders.forEach(f=>obs.observe(f));
+
+        // lightbox
+        function openLightbox(src, alt){
+            document.getElementById('lb-img').src = src;
+            document.getElementById('lb-img').alt = alt || '';
+            document.getElementById('lb-caption').textContent = alt || '';
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('show');
+            lb.setAttribute('aria-hidden','false');
+        }
+        function closeLightbox(){
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('show');
+            lb.setAttribute('aria-hidden','true');
+            document.getElementById('lb-img').src = '';
+            document.getElementById('lb-img').alt = '';
+            document.getElementById('lb-caption').textContent = '';
+        }
+
+        // contact form handlers
+        function submitForm(){
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            if(!name || !email){
+                alert(
+                    (langSelect.value === 'fr') ? "Veuillez fournir le nom et l'email." :
+                    (langSelect.value === 'ar') ? 'يرجى تقديم الاسم والبريد الإلكتروني.' :
+                    (langSelect.value === 'fa') ? 'لطفاً نام و ایمیل را وارد کنید.' :
+                    'Please provide name and email.'
+                );
+                return;
+            }
+            alert(
+                (langSelect.value === 'fr') ? 'Merci, ' + name + '! Votre demande a été envoyée.' :
+                (langSelect.value === 'ar') ? 'شكراً، ' + name + '! تم إرسال طلبك.' :
+                (langSelect.value === 'fa') ? 'با تشکر، ' + name + '! درخواست شما ارسال شد.' :
+                'Thanks, ' + name + '! Your request has been submitted.'
+            );
+            resetForm();
+            document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+        }
+
+        function resetForm(){
+            document.querySelectorAll('#contact input, #contact textarea, #contact select').forEach(i=>i.value='');
+        }
+
+        // wire up form submit (avoid inline onsubmit)
+        const contactForm = document.getElementById('contact-form');
+        if(contactForm){
+            contactForm.addEventListener('submit', e=>{
+                e.preventDefault();
+                submitForm();
+            });
+        }
+
+        // reset button
+        const resetBtn = document.getElementById('btn-reset');
+        if(resetBtn) resetBtn.addEventListener('click', resetForm);
+
+        // connect CTA buttons
+        const btnRequest = document.getElementById('btn-request');
+        const btnView = document.getElementById('btn-view');
+        const btnSchedule = document.getElementById('btn-schedule');
+        const btnContact = document.getElementById('btn-contact');
+
+        if(btnRequest) btnRequest.addEventListener('click', ()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}));
+        if(btnView) btnView.addEventListener('click', ()=>document.getElementById('gallery').scrollIntoView({behavior:'smooth'}));
+        if(btnSchedule) btnSchedule.addEventListener('click', ()=>alert(
+            (langSelect.value==='fr')? 'Merci — nous vous contacterons!' :
+            (langSelect.value==='ar')? 'شكراً — سنتواصل معك!' :
+            (langSelect.value==='fa')? 'با تشکر — با شما تماس خواهیم گرفت!' :
+            'Thanks — we will reach out!'
+        ));
+        if(btnContact) btnContact.addEventListener('click', ()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}));
+    </script>
+</body>
+</html>
+<style>
+    /* styles.css - colorful, active theme */
+
+/* Base vars (day) */
+:root{
+    --bg: #fbfdff;
+    --surface: #ffffff;
+    --muted: #6b7280;
+    --text: #0f1724;
+    --card-shadow: 0 6px 18px rgba(13, 30, 60, 0.06);
+    --glass: rgba(255,255,255,0.6);
+    --accent-1: #ff7a59; /* warm coral */
+    --accent-2: #ffb86b; /* sunrise */
+    --accent-3: #6dd3ff; /* sky */
+    --accent-4: #7b61ff; /* violet */
+    --accent-gradient: linear-gradient(135deg,var(--accent-1),var(--accent-4));
+    --focus-ring: 0 0 0 4px rgba(123,97,255,0.12);
+    --radius: 12px;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Night theme overrides */
+.theme-night {
+    --bg: #071227;
+    --surface: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    --muted: #9aa6b2;
+    --text: #e8f0f8;
+    --card-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    --glass: rgba(255,255,255,0.02);
+    --accent-1: #ff6b6b;
+    --accent-2: #ffd26b;
+    --accent-3: #69e0ff;
+    --accent-4: #a58bff;
+    --accent-gradient: linear-gradient(135deg,var(--accent-3),var(--accent-4));
+    --focus-ring: 0 0 0 4px rgba(105,224,255,0.08);
+}
+
+/* Page background and containers */
+html,body{
+    height:100%;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(123,97,255,0.06), transparent 8%),
+                            radial-gradient(900px 500px at 90% 90%, rgba(109,211,255,0.04), transparent 10%),
+                            var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+}
+
+/* header */
+header.bg-transparent{
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,0.02));
+    backdrop-filter: blur(6px) saturate(120%);
+    position:sticky;
+    top:0;
+    z-index:50;
+}
+
+.brand {
+    gap: .75rem;
+}
+
+.logo {
+    width:48px;
+    height:48px;
+    background: var(--accent-gradient);
+    color:white;
+    font-weight:700;
+    border-radius:50%;
+    font-size:1.05rem;
+    box-shadow: 0 6px 18px rgba(123,97,255,0.18);
+    letter-spacing: .5px;
+    transition: transform .22s ease, box-shadow .22s ease;
+}
+.logo:hover{ transform: translateY(-3px) scale(1.03); }
+
+/* brand text */
+.brand-text h1 { letter-spacing: -.2px; font-weight:600; }
+.muted { color: var(--muted); }
+
+/* nav */
+nav .nav-link { color: var(--muted); transition: color .18s ease; }
+nav .nav-link:hover { color: var(--text); text-decoration:none; }
+
+/* controls */
+.controls .form-select {
+    min-width:110px;
+    border-radius:8px;
+    background:var(--surface);
+    box-shadow: var(--card-shadow);
+    border:1px solid rgba(0,0,0,0.04);
+}
+
+/* cards */
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    border: none;
+}
+
+/* hero */
+.hero-card {
+    position:relative;
+    overflow:visible;
+    transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.55));
+}
+
+.theme-night .hero-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.hero-card::before{
+    content:"";
+    position:absolute;
+    left:-8px;
+    top:12px;
+    bottom:12px;
+    width:6px;
+    border-radius:6px;
+    background: linear-gradient(180deg,var(--accent-1),var(--accent-2));
+    filter: drop-shadow(0 6px 20px rgba(123,97,255,0.12));
+}
+
+/* animate hero subtle */
+.hero-card:hover{ transform: translateY(-6px); box-shadow: 0 20px 50px rgba(2,20,40,0.12); }
+
+/* CTA buttons - vibrant */
+.btn-primary {
+    background: var(--accent-gradient);
+    border: none;
+    color: white;
+    box-shadow: 0 8px 30px rgba(123,97,255,0.12);
+    transition: transform .16s ease, box-shadow .16s ease;
+    border-radius: 10px;
+    display:inline-flex;
+    align-items:center;
+}
+.btn-primary:active{ transform: translateY(1px) scale(.998); }
+.btn-primary:hover{ transform: translateY(-3px); box-shadow:0 18px 40px rgba(123,97,255,0.16); }
+.btn-primary .bi { font-size:1.05rem; margin-right:6px; }
+
+/* outline secondary with soft border tone */
+.btn-outline-secondary{
+    border-radius:10px;
+    border:1px solid rgba(15,23,36,0.06);
+    background: linear-gradient(180deg, rgba(255,255,255,0.66), rgba(255,255,255,0.5));
+    color:var(--text);
+}
+.theme-night .btn-outline-secondary{
+    background: rgba(255,255,255,0.02);
+    border-color: rgba(255,255,255,0.04);
+    color:var(--text);
+}
+
+/* badges */
+.badge {
+    border-radius: 999px;
+    padding: .45rem .6rem;
+    font-weight:600;
+    color: var(--text);
+    background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));
+    box-shadow: 0 6px 18px rgba(13,30,60,0.05);
+    transition: transform .16s ease, box-shadow .16s ease;
+}
+.badge:hover{ transform: translateY(-3px); box-shadow:0 12px 30px rgba(13,30,60,0.08); }
+
+/* colorful chips */
+#chip-1{ background: linear-gradient(90deg,var(--accent-1),var(--accent-2)); color:#fff; }
+#chip-2{ background: linear-gradient(90deg,var(--accent-3),var(--accent-4)); color:#012; }
+#chip-3{ background: linear-gradient(90deg, #9be15d, #00e6a6); color:#012; }
+
+/* gallery */
+.gallery img {
+    transition: transform .36s cubic-bezier(.2,.9,.2,1), box-shadow .36s;
+    cursor:zoom-in;
+}
+.gallery img:hover{ transform: translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(2,20,40,0.12); }
+
+/* side card */
+.side .project-meta .price { color: var(--accent-4); font-weight:700; }
+
+/* contact / form */
+#contact .form-control, #contact .form-select, #contact textarea{
+    border-radius:10px;
+    border:1px solid rgba(15,23,36,0.06);
+    background: rgba(255,255,255,0.9);
+}
+.theme-night #contact .form-control, .theme-night #contact .form-select, .theme-night #contact textarea{
+    background: rgba(255,255,255,0.02);
+    border-color: rgba(255,255,255,0.04);
+    color:var(--text);
+}
+
+/* lightbox */
+#lightbox{
+    position:fixed;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(180deg, rgba(2,6,23,0.6), rgba(2,6,23,0.8));
+    opacity:0;
+    pointer-events:none;
+    transition: opacity .18s ease;
+    z-index:1200;
+}
+#lightbox.show{ opacity:1; pointer-events:auto; }
+.lightbox-inner{
+    max-width:90%;
+    max-height:90%;
+    text-align:center;
+}
+.lightbox-close{
+    position:absolute;
+    right:18px;
+    top:18px;
+    z-index:1210;
+    border-radius:8px;
+}
+
+/* reveal on scroll animations */
+.fade-in { opacity:0; transform: translateY(16px) scale(.997); transition: opacity .6s ease, transform .6s ease; will-change: opacity, transform; }
+.fade-in.show { opacity:1; transform: translateY(0) scale(1); }
+
+/* small utilities */
+.avatar { width:44px; height:44px; background: linear-gradient(135deg,var(--accent-3),var(--accent-4)); color:white; font-weight:700; }
+.testi strong { display:block; }
+
+/* footer */
+footer { opacity: .9; padding-bottom:30px; }
+
+/* focus states for accessibility */
+button:focus, .form-control:focus, .form-select:focus, a:focus{
+    outline: none;
+    box-shadow: var(--focus-ring);
+    border-color: transparent;
+}
+
+/* RTL support */
+.rtl .brand-text { text-align: right; }
+.rtl .logo { transform-origin: right center; }
+.rtl nav { direction: rtl; }
+
+/* reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .hero-card:hover, .btn-primary:hover, .gallery img:hover, .badge:hover { transform: none; box-shadow: none; }
+    .fade-in, .fade-in.show { transition: none; transform: none; opacity:1; }
+}
+
+/* responsive tweaks */
+@media (max-width: 991px){
+    .hero-card::before { left:6px; top:8px; bottom:8px; width:5px; }
+    .logo { width:44px; height:44px; font-size:1rem; }
+}
+
+</style>
